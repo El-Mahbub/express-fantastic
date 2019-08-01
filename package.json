@@ -1,0 +1,40 @@
+{
+  "name": "express-fantastic",
+  "version": "0.0.1",
+  "description": "Minimalist but fantastic MVC for express with es6 syntax",
+  "private": true,
+  "main": "index.js",
+  "repository": "https://github.com/El-Mahbub/express-fantastic",
+  "scripts": {
+    "start": "nodemon index.js --exec babel-node",
+    "build": "babel src -d build",
+    "serve": "node build/index.js"
+  },
+  "keywords": [
+    "javascript",
+    "express",
+    "express-fantastic",
+    "fantastic",
+    "nodejs",
+    "framework",
+    "mvc",
+    "api"
+  ],
+  "author": "El-Mahbub <elmahbub14021993@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "nodemon": "^1.19.1"
+  }
+}

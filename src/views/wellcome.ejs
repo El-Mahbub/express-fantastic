@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" href="<%= styleCss %>" type="text/css">
+        <style>
+            .blue {
+                color: #0ab2f7;
+                font-weight: bold;
+            }
+            .card-wrap {
+                width: 300px;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-custom navbar-static-top">
+            <a class="navbar-brand blue" href="#">Express Fantastic</a>
+        </nav>
+        <div class="container" align="center">
+            <br>
+            <div class="card card-wrap">
+                <h4>Wellcome to</h4>
+                <h2 class="app blue"><%= heading %></h2>
+                <span style="font-size: 15px; color: #000">v 1.0.0</span>
+                <hr/>
+                <p class="message"><%= message %></p>
+                <img class="logo" height="32px" width="90px" src="<%= logo %>"/>
+            </div>
+            <br/>
+            <em style="color: #000; text-shadow: 1.5px rgba(0, 0, 0, 0.2)"><%= info %></em>
+            <br/>
+            <br/>
+            <p>Copyright reserved 2018-<script>document.write(new Date().getFullYear());</script>&copy;</p>
+            <br/>
+        </div>
+    </body>
+</html>
